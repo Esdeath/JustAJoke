@@ -16,10 +16,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor redColor];
-    // Do any additional setup after loading the view.
+    self.view.backgroundColor = MRGlobalBackgroundColor;
+    
+    self.navigationItem.titleView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"MainTitle"]];
+    
+   self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTarget:self action:@selector(leftBarButtonClick) image:@"MainTagSubIcon" highLightImage:@"MainTagSubIconClick"];  // Do any additional setup after loading the view.
 }
 
+-(void)leftBarButtonClick
+{
+    MRLogFunc;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

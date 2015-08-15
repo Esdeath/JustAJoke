@@ -7,7 +7,7 @@
 //
 
 #import "MRMeController.h"
-
+#import "MRSettingController.h"
 @interface MRMeController ()
 
 @end
@@ -16,14 +16,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.view.backgroundColor = MRGlobalBackgroundColor;
+    
+    self.navigationItem.title = @"我的";
+
+    UIBarButtonItem *settingItem = [UIBarButtonItem itemWithTarget:self action:@selector(settingClick) image:@"mine-setting-icon" highLightImage:@"mine-setting-icon-click"];
+    UIBarButtonItem *moonItem = [UIBarButtonItem itemWithTarget:self action:@selector(moonClick) image:@"mine-moon-icon" highLightImage:@"mine-moon-icon-click"];
+    self.navigationItem.rightBarButtonItems = @[settingItem, moonItem];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)settingClick
+{
+    MRSettingController *setting = [[MRSettingController alloc] init];
+    [self.navigationController pushViewController:setting animated:YES];
 }
 
+- (void)moonClick
+{
+    MRLogFunc;
+}
 /*
 #pragma mark - Navigation
 

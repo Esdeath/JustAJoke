@@ -13,4 +13,6 @@
 #import "NSString+Hash.h"
 #import "NSString+MR.h"
 #import "UIView+LayoutMethods.h"
+
+#import "UIBarButtonItem+MRExtension.h"
 #endif

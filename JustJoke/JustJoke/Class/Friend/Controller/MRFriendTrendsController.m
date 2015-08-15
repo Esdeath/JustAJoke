@@ -16,7 +16,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.view.backgroundColor = MRGlobalBackgroundColor;
+    
+    // 设置导航栏中间的文字
+    self.navigationItem.title = @"我的关注";
+    
+    // 设置导航栏左边的按钮
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTarget:self action:@selector(leftBarButtonClick) image:@"friendsRecommentIcon" highLightImage:@"friendsRecommentIcon-click"];
+}
+
+- (void)leftBarButtonClick {
+    MRLogFunc;
 }
 
 - (void)didReceiveMemoryWarning {

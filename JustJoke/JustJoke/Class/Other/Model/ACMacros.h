@@ -7,7 +7,7 @@
 #define ACMacros_h
 
 //弱self，强self,一般在block中使用
-#define WEAKSELF typeof(self) __weak weakSelf = self;
+#define WEAKSELF   typeof(self) __weak weakSelf = self;
 #define STRONGSELF typeof(weakSelf) __strong strongSelf = weakSelf;
 //获得主window
 #define MRKeyWindow [UIApplication sharedApplication].keyWindow
@@ -25,12 +25,14 @@
 
 
 //** DEBUG LOG *********************************************************************************
-#ifdef DEBUG
-#define MRLog( s, ... ) NSLog( @"< %@:(%d) > %@", [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
-#else
-#define MRLog( s, ... )
+#ifdef DEBUG // 开发
+#define MRLog(...) NSLog(__VA_ARGS__)
+#else // 发布
+#define MRLog(...)
 #endif
 
+
+#define MRLogFunc MRLog(@"%s", __func__)
 //** 获得当前的 年 月 日 时 分 秒 *****************************************************************************
 #define  CurrentSec [[NSCalendar currentCalendar] component:NSCalendarUnitSecond fromDate:[NSDate date]]
 #define  CurrentMin [[NSCalendar currentCalendar] component:NSCalendarUnitMinute fromDate:[NSDate date]]
@@ -90,7 +92,7 @@
 #define RgbColor(r, g, b)       [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]
 #define RgbColorA(r, g, b, a)    [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
 #define RandomColor [UIColor colorWithRed:arc4random_uniform(256) / 255.0 green:arc4random_uniform(256) / 255.0 blue:arc4random_uniform(256) / 255.0 alpha:1]
-
+#define MRGlobalBackgroundColor RgbColor(215, 215, 215)
 // View 圆角和加边框
 #define ViewBorderRadius(View, Radius, Width, Color)\
                                 [View.layer setCornerRadius:(Radius)];\
@@ -129,6 +131,8 @@
 #define LocalString(x, ...)     NSLocalizedString(x, nil)
 /** NSLocalizedStringFromTable宏做的其实就是在当前bundle中查找资源文件名“xxx.strings”(参数:键＋文件名＋注释) */
 #define AppLocalString(x, ...)  NSLocalizedStringFromTable(x, @"someName", nil)
+
+
 
 //********************************单例宏定义***************************************
 #define interfaceSingle(name)  + (instancetype)share##name

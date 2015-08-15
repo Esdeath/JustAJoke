@@ -13,16 +13,19 @@
 		E57D11BF1B7F5A8300312ADF /* MRFriendTrendsController.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D11BE1B7F5A8300312ADF /* MRFriendTrendsController.m */; };
 		E57D11C21B7F5AA900312ADF /* MRMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D11C11B7F5AA900312ADF /* MRMeController.m */; };
 		E57D11C51B7F5ABD00312ADF /* MRNewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D11C41B7F5ABD00312ADF /* MRNewController.m */; };
-		E57D11E51B7F5E3000312ADF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D11CC1B7F5E3000312ADF /* AppDelegate.m */; };
-		E57D11E61B7F5E3000312ADF /* NSDictionary+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D11CF1B7F5E3000312ADF /* NSDictionary+Log.m */; };
-		E57D11E71B7F5E3000312ADF /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D11D21B7F5E3000312ADF /* NSString+Hash.m */; };
-		E57D11E81B7F5E3000312ADF /* NSString+MR.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D11D41B7F5E3000312ADF /* NSString+MR.m */; };
-		E57D11E91B7F5E3000312ADF /* UIView+AEBHandyAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D11D71B7F5E3000312ADF /* UIView+AEBHandyAutoLayout.m */; };
-		E57D11EA1B7F5E3000312ADF /* UIView+LayoutMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D11D91B7F5E3000312ADF /* UIView+LayoutMethods.m */; };
-		E57D11EB1B7F5E3000312ADF /* NSMutableURLRequest+Upload.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D11DC1B7F5E3000312ADF /* NSMutableURLRequest+Upload.m */; };
-		E57D11EC1B7F5E3000312ADF /* MRMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D11DF1B7F5E3000312ADF /* MRMainController.m */; };
-		E57D11ED1B7F5E3000312ADF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D11E11B7F5E3000312ADF /* main.m */; };
-		E57D11F01B7F640300312ADF /* MRMainNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D11EF1B7F640300312ADF /* MRMainNavController.m */; };
+		E57D12371B7F80D100312ADF /* NSDictionary+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D121C1B7F80D100312ADF /* NSDictionary+Log.m */; };
+		E57D12381B7F80D100312ADF /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D121F1B7F80D100312ADF /* NSString+Hash.m */; };
+		E57D12391B7F80D100312ADF /* NSString+MR.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D12211B7F80D100312ADF /* NSString+MR.m */; };
+		E57D123A1B7F80D100312ADF /* UIView+AEBHandyAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D12241B7F80D100312ADF /* UIView+AEBHandyAutoLayout.m */; };
+		E57D123B1B7F80D100312ADF /* UIView+LayoutMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D12261B7F80D100312ADF /* UIView+LayoutMethods.m */; };
+		E57D123C1B7F80D100312ADF /* NSMutableURLRequest+Upload.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D12291B7F80D100312ADF /* NSMutableURLRequest+Upload.m */; };
+		E57D123D1B7F80D100312ADF /* MRMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D122C1B7F80D100312ADF /* MRMainController.m */; };
+		E57D123E1B7F80D100312ADF /* MRMainNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D122E1B7F80D100312ADF /* MRMainNavController.m */; };
+		E57D123F1B7F80D100312ADF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D12301B7F80D100312ADF /* main.m */; };
+		E57D12401B7F80D100312ADF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D12341B7F80D100312ADF /* AppDelegate.m */; };
+		E57D12431B7F820300312ADF /* MRTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D12421B7F820300312ADF /* MRTabBar.m */; };
+		E57D12491B7F8D1300312ADF /* UIBarButtonItem+MRExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D12481B7F8D1300312ADF /* UIBarButtonItem+MRExtension.m */; };
+		E57D124C1B7F906C00312ADF /* MRSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D124B1B7F906C00312ADF /* MRSettingController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,26 +53,32 @@
 		E57D11C11B7F5AA900312ADF /* MRMeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMeController.m; sourceTree = "<group>"; };
 		E57D11C31B7F5ABD00312ADF /* MRNewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRNewController.h; sourceTree = "<group>"; };
 		E57D11C41B7F5ABD00312ADF /* MRNewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRNewController.m; sourceTree = "<group>"; };
-		E57D11CA1B7F5E3000312ADF /* ACMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACMacros.h; sourceTree = "<group>"; };
-		E57D11CB1B7F5E3000312ADF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E57D11CC1B7F5E3000312ADF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E57D11CF1B7F5E3000312ADF /* NSDictionary+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Log.m"; sourceTree = "<group>"; };
-		E57D11D11B7F5E3000312ADF /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
-		E57D11D21B7F5E3000312ADF /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
-		E57D11D31B7F5E3000312ADF /* NSString+MR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MR.h"; sourceTree = "<group>"; };
-		E57D11D41B7F5E3000312ADF /* NSString+MR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MR.m"; sourceTree = "<group>"; };
-		E57D11D61B7F5E3000312ADF /* UIView+AEBHandyAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AEBHandyAutoLayout.h"; sourceTree = "<group>"; };
-		E57D11D71B7F5E3000312ADF /* UIView+AEBHandyAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AEBHandyAutoLayout.m"; sourceTree = "<group>"; };
-		E57D11D81B7F5E3000312ADF /* UIView+LayoutMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LayoutMethods.h"; sourceTree = "<group>"; };
-		E57D11D91B7F5E3000312ADF /* UIView+LayoutMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LayoutMethods.m"; sourceTree = "<group>"; };
-		E57D11DB1B7F5E3000312ADF /* NSMutableURLRequest+Upload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableURLRequest+Upload.h"; sourceTree = "<group>"; };
-		E57D11DC1B7F5E3000312ADF /* NSMutableURLRequest+Upload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableURLRequest+Upload.m"; sourceTree = "<group>"; };
-		E57D11DE1B7F5E3000312ADF /* MRMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRMainController.h; sourceTree = "<group>"; };
-		E57D11DF1B7F5E3000312ADF /* MRMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMainController.m; sourceTree = "<group>"; };
-		E57D11E11B7F5E3000312ADF /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E57D11E31B7F5E3000312ADF /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		E57D11EE1B7F640300312ADF /* MRMainNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRMainNavController.h; sourceTree = "<group>"; };
-		E57D11EF1B7F640300312ADF /* MRMainNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMainNavController.m; sourceTree = "<group>"; };
+		E57D121C1B7F80D100312ADF /* NSDictionary+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Log.m"; sourceTree = "<group>"; };
+		E57D121E1B7F80D100312ADF /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
+		E57D121F1B7F80D100312ADF /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
+		E57D12201B7F80D100312ADF /* NSString+MR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MR.h"; sourceTree = "<group>"; };
+		E57D12211B7F80D100312ADF /* NSString+MR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MR.m"; sourceTree = "<group>"; };
+		E57D12231B7F80D100312ADF /* UIView+AEBHandyAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AEBHandyAutoLayout.h"; sourceTree = "<group>"; };
+		E57D12241B7F80D100312ADF /* UIView+AEBHandyAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AEBHandyAutoLayout.m"; sourceTree = "<group>"; };
+		E57D12251B7F80D100312ADF /* UIView+LayoutMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LayoutMethods.h"; sourceTree = "<group>"; };
+		E57D12261B7F80D100312ADF /* UIView+LayoutMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LayoutMethods.m"; sourceTree = "<group>"; };
+		E57D12281B7F80D100312ADF /* NSMutableURLRequest+Upload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableURLRequest+Upload.h"; sourceTree = "<group>"; };
+		E57D12291B7F80D100312ADF /* NSMutableURLRequest+Upload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableURLRequest+Upload.m"; sourceTree = "<group>"; };
+		E57D122B1B7F80D100312ADF /* MRMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRMainController.h; sourceTree = "<group>"; };
+		E57D122C1B7F80D100312ADF /* MRMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMainController.m; sourceTree = "<group>"; };
+		E57D122D1B7F80D100312ADF /* MRMainNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRMainNavController.h; sourceTree = "<group>"; };
+		E57D122E1B7F80D100312ADF /* MRMainNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMainNavController.m; sourceTree = "<group>"; };
+		E57D12301B7F80D100312ADF /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E57D12321B7F80D100312ADF /* ACMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACMacros.h; sourceTree = "<group>"; };
+		E57D12331B7F80D100312ADF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E57D12341B7F80D100312ADF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E57D12351B7F80D100312ADF /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		E57D12411B7F820300312ADF /* MRTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRTabBar.h; sourceTree = "<group>"; };
+		E57D12421B7F820300312ADF /* MRTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRTabBar.m; sourceTree = "<group>"; };
+		E57D12471B7F8D1300312ADF /* UIBarButtonItem+MRExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+MRExtension.h"; sourceTree = "<group>"; };
+		E57D12481B7F8D1300312ADF /* UIBarButtonItem+MRExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+MRExtension.m"; sourceTree = "<group>"; };
+		E57D124A1B7F906C00312ADF /* MRSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRSettingController.h; sourceTree = "<group>"; };
+		E57D124B1B7F906C00312ADF /* MRSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRSettingController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,10 +156,10 @@
 			isa = PBXGroup;
 			children = (
 				E57D119E1B7F58AF00312ADF /* Essence */,
+				E57D11AA1B7F58AF00312ADF /* New */,
 				E57D11A21B7F58AF00312ADF /* FriendTrends */,
 				E57D11A61B7F58AF00312ADF /* Me */,
-				E57D11AA1B7F58AF00312ADF /* New */,
-				E57D11C91B7F5E3000312ADF /* Other */,
+				E57D12191B7F80D100312ADF /* Other */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -237,6 +246,8 @@
 			children = (
 				E57D11C01B7F5AA900312ADF /* MRMeController.h */,
 				E57D11C11B7F5AA900312ADF /* MRMeController.m */,
+				E57D124A1B7F906C00312ADF /* MRSettingController.h */,
+				E57D124B1B7F906C00312ADF /* MRSettingController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -288,101 +299,105 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		E57D11C91B7F5E3000312ADF /* Other */ = {
+		E57D12191B7F80D100312ADF /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				E57D11CA1B7F5E3000312ADF /* ACMacros.h */,
-				E57D11CB1B7F5E3000312ADF /* AppDelegate.h */,
-				E57D11CC1B7F5E3000312ADF /* AppDelegate.m */,
-				E57D11CD1B7F5E3000312ADF /* Category */,
-				E57D11DD1B7F5E3000312ADF /* Controller */,
-				E57D11E01B7F5E3000312ADF /* Lib */,
-				E57D11E11B7F5E3000312ADF /* main.m */,
-				E57D11E21B7F5E3000312ADF /* Model */,
-				E57D11E31B7F5E3000312ADF /* PrefixHeader.pch */,
-				E57D11E41B7F5E3000312ADF /* View */,
+				E57D121A1B7F80D100312ADF /* Category */,
+				E57D122F1B7F80D100312ADF /* Lib */,
+				E57D12301B7F80D100312ADF /* main.m */,
+				E57D122A1B7F80D100312ADF /* Controller */,
+				E57D12311B7F80D100312ADF /* Model */,
+				E57D12361B7F80D100312ADF /* View */,
+				E57D12351B7F80D100312ADF /* PrefixHeader.pch */,
 			);
 			path = Other;
 			sourceTree = "<group>";
 		};
-		E57D11CD1B7F5E3000312ADF /* Category */ = {
+		E57D121A1B7F80D100312ADF /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				E57D11CE1B7F5E3000312ADF /* DicAndArrayZh */,
-				E57D11D01B7F5E3000312ADF /* NSString */,
-				E57D11D51B7F5E3000312ADF /* UIView */,
-				E57D11DA1B7F5E3000312ADF /* UpLoadFile */,
+				E57D121B1B7F80D100312ADF /* DicAndArrayZh */,
+				E57D121D1B7F80D100312ADF /* NSString */,
+				E57D12221B7F80D100312ADF /* UIView */,
+				E57D12271B7F80D100312ADF /* UpLoadFile */,
+				E57D12471B7F8D1300312ADF /* UIBarButtonItem+MRExtension.h */,
+				E57D12481B7F8D1300312ADF /* UIBarButtonItem+MRExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
 		};
-		E57D11CE1B7F5E3000312ADF /* DicAndArrayZh */ = {
+		E57D121B1B7F80D100312ADF /* DicAndArrayZh */ = {
 			isa = PBXGroup;
 			children = (
-				E57D11CF1B7F5E3000312ADF /* NSDictionary+Log.m */,
+				E57D121C1B7F80D100312ADF /* NSDictionary+Log.m */,
 			);
 			path = DicAndArrayZh;
 			sourceTree = "<group>";
 		};
-		E57D11D01B7F5E3000312ADF /* NSString */ = {
+		E57D121D1B7F80D100312ADF /* NSString */ = {
 			isa = PBXGroup;
 			children = (
-				E57D11D11B7F5E3000312ADF /* NSString+Hash.h */,
-				E57D11D21B7F5E3000312ADF /* NSString+Hash.m */,
-				E57D11D31B7F5E3000312ADF /* NSString+MR.h */,
-				E57D11D41B7F5E3000312ADF /* NSString+MR.m */,
+				E57D121E1B7F80D100312ADF /* NSString+Hash.h */,
+				E57D121F1B7F80D100312ADF /* NSString+Hash.m */,
+				E57D12201B7F80D100312ADF /* NSString+MR.h */,
+				E57D12211B7F80D100312ADF /* NSString+MR.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
 		};
-		E57D11D51B7F5E3000312ADF /* UIView */ = {
+		E57D12221B7F80D100312ADF /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				E57D11D61B7F5E3000312ADF /* UIView+AEBHandyAutoLayout.h */,
-				E57D11D71B7F5E3000312ADF /* UIView+AEBHandyAutoLayout.m */,
-				E57D11D81B7F5E3000312ADF /* UIView+LayoutMethods.h */,
-				E57D11D91B7F5E3000312ADF /* UIView+LayoutMethods.m */,
+				E57D12231B7F80D100312ADF /* UIView+AEBHandyAutoLayout.h */,
+				E57D12241B7F80D100312ADF /* UIView+AEBHandyAutoLayout.m */,
+				E57D12251B7F80D100312ADF /* UIView+LayoutMethods.h */,
+				E57D12261B7F80D100312ADF /* UIView+LayoutMethods.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
 		};
-		E57D11DA1B7F5E3000312ADF /* UpLoadFile */ = {
+		E57D12271B7F80D100312ADF /* UpLoadFile */ = {
 			isa = PBXGroup;
 			children = (
-				E57D11DB1B7F5E3000312ADF /* NSMutableURLRequest+Upload.h */,
-				E57D11DC1B7F5E3000312ADF /* NSMutableURLRequest+Upload.m */,
+				E57D12281B7F80D100312ADF /* NSMutableURLRequest+Upload.h */,
+				E57D12291B7F80D100312ADF /* NSMutableURLRequest+Upload.m */,
 			);
 			path = UpLoadFile;
 			sourceTree = "<group>";
 		};
-		E57D11DD1B7F5E3000312ADF /* Controller */ = {
+		E57D122A1B7F80D100312ADF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E57D11DE1B7F5E3000312ADF /* MRMainController.h */,
-				E57D11DF1B7F5E3000312ADF /* MRMainController.m */,
-				E57D11EE1B7F640300312ADF /* MRMainNavController.h */,
-				E57D11EF1B7F640300312ADF /* MRMainNavController.m */,
+				E57D122B1B7F80D100312ADF /* MRMainController.h */,
+				E57D122C1B7F80D100312ADF /* MRMainController.m */,
+				E57D122D1B7F80D100312ADF /* MRMainNavController.h */,
+				E57D122E1B7F80D100312ADF /* MRMainNavController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		E57D11E01B7F5E3000312ADF /* Lib */ = {
+		E57D122F1B7F80D100312ADF /* Lib */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Lib;
 			sourceTree = "<group>";
 		};
-		E57D11E21B7F5E3000312ADF /* Model */ = {
+		E57D12311B7F80D100312ADF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E57D12321B7F80D100312ADF /* ACMacros.h */,
+				E57D12331B7F80D100312ADF /* AppDelegate.h */,
+				E57D12341B7F80D100312ADF /* AppDelegate.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		E57D11E41B7F5E3000312ADF /* View */ = {
+		E57D12361B7F80D100312ADF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E57D12411B7F820300312ADF /* MRTabBar.h */,
+				E57D12421B7F820300312ADF /* MRTabBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -486,20 +501,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E57D11ED1B7F5E3000312ADF /* main.m in Sources */,
-				E57D11E71B7F5E3000312ADF /* NSString+Hash.m in Sources */,
-				E57D11EA1B7F5E3000312ADF /* UIView+LayoutMethods.m in Sources */,
-				E57D11EB1B7F5E3000312ADF /* NSMutableURLRequest+Upload.m in Sources */,
+				E57D123F1B7F80D100312ADF /* main.m in Sources */,
+				E57D123B1B7F80D100312ADF /* UIView+LayoutMethods.m in Sources */,
+				E57D123D1B7F80D100312ADF /* MRMainController.m in Sources */,
 				E57D11BF1B7F5A8300312ADF /* MRFriendTrendsController.m in Sources */,
-				E57D11E81B7F5E3000312ADF /* NSString+MR.m in Sources */,
-				E57D11EC1B7F5E3000312ADF /* MRMainController.m in Sources */,
-				E57D11E61B7F5E3000312ADF /* NSDictionary+Log.m in Sources */,
+				E57D123C1B7F80D100312ADF /* NSMutableURLRequest+Upload.m in Sources */,
+				E57D12381B7F80D100312ADF /* NSString+Hash.m in Sources */,
+				E57D12431B7F820300312ADF /* MRTabBar.m in Sources */,
+				E57D12401B7F80D100312ADF /* AppDelegate.m in Sources */,
+				E57D123E1B7F80D100312ADF /* MRMainNavController.m in Sources */,
 				E57D11C21B7F5AA900312ADF /* MRMeController.m in Sources */,
-				E57D11F01B7F640300312ADF /* MRMainNavController.m in Sources */,
 				E57D11C51B7F5ABD00312ADF /* MRNewController.m in Sources */,
+				E57D124C1B7F906C00312ADF /* MRSettingController.m in Sources */,
+				E57D12391B7F80D100312ADF /* NSString+MR.m in Sources */,
+				E57D123A1B7F80D100312ADF /* UIView+AEBHandyAutoLayout.m in Sources */,
+				E57D12491B7F8D1300312ADF /* UIBarButtonItem+MRExtension.m in Sources */,
+				E57D12371B7F80D100312ADF /* NSDictionary+Log.m in Sources */,
 				E57D11BC1B7F5A5900312ADF /* MREssenceController.m in Sources */,
-				E57D11E91B7F5E3000312ADF /* UIView+AEBHandyAutoLayout.m in Sources */,
-				E57D11E51B7F5E3000312ADF /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

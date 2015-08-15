@@ -14,6 +14,8 @@
 #import "MRMeController.h"
 
 #import "MRMainNavController.h"
+
+#import "MRTabBar.h"
 @interface MRMainController ()
 
 @end
@@ -23,21 +25,43 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    [self setUpItemAttributes];
+    
+    //设置子控制器
+    [self setUpAllChildViewControllers];
+    
     //设置tabbar
     [self setUpTabBar];
-        //设置子控制器
-    [self setUpAllChildViewControllers];
 }
+
 
 -(void)setUpTabBar
 {
+    //readonly 只能通过KVC赋值
+    //self.tabBar = [[MRTabBar alloc]init];
+    [self setValue:[[MRTabBar alloc]init] forKeyPath:MRKeyPath(self, tabBar)];
+    
+}
+
+-(void)setUpItemAttributes
+{
     UITabBarItem *item = [UITabBarItem appearance];
+    
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    dict[NSForegroundColorAttributeName] = [UIColor grayColor];
+    dict[NSFontAttributeName] = [UIFont systemFontOfSize:13];
+    [item setTitleTextAttributes:dict forState:UIControlStateNormal];
+    
     NSMutableDictionary *dict1 = [NSMutableDictionary dictionary];
-    dict1[NSForegroundColorAttributeName] = [UIColor blackColor];
+    dict1[NSForegroundColorAttributeName] = [UIColor darkGrayColor];
+    dict1[NSFontAttributeName] = [UIFont systemFontOfSize:13];
     [item setTitleTextAttributes:dict1 forState:UIControlStateSelected];
     //[item setTintColor:[UIColor redColor]];
     //[item setBarTintColor:[UIColor redColor]];
-   }
+}
+
+
 -(void)setUpAllChildViewControllers
 {
     MREssenceController *essence = [[MREssenceController alloc]init];
@@ -71,14 +95,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

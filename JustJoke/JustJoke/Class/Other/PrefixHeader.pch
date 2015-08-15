@@ -1,0 +1,16 @@
+//
+//  PrefixHeader.pch
+//  JustJoke
+//
+//  Created by Asuna on 15/8/15.
+//  Copyright (c) 2015年 MR. All rights reserved.
+//
+
+#ifndef JustJoke_PrefixHeader_pch
+#define JustJoke_PrefixHeader_pch
+
+#import "ACMacros.h"
+#import "NSString+Hash.h"
+#import "NSString+MR.h"
+#import "UIView+LayoutMethods.h"
+#endif

@@ -679,6 +679,7 @@
 				E57D11991B7F566E00312ADF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E57D119A1B7F566E00312ADF /* Build configuration list for PBXNativeTarget "JustJokeTests" */ = {
 			isa = XCConfigurationList;
@@ -687,6 +688,7 @@
 				E57D119C1B7F566E00312ADF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

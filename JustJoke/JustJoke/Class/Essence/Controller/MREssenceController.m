@@ -7,7 +7,7 @@
 //
 
 #import "MREssenceController.h"
-
+#import "MRRecommendTagsController.h"
 @interface MREssenceController ()
 
 @end
@@ -25,7 +25,10 @@
 
 -(void)leftBarButtonClick
 {
-    MRLogFunc;
+    MRRecommendTagsController *recommendTags = [[MRRecommendTagsController alloc]init];
+    
+    [self.navigationController pushViewController:recommendTags animated:YES];
+    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -8,7 +8,7 @@
 
 #import "MRMainNavController.h"
 
-@interface MRMainNavController ()
+@interface MRMainNavController ()<UIGestureRecognizerDelegate>
 
 @end
 
@@ -28,7 +28,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.interactivePopGestureRecognizer.delegate = nil;
+    self.interactivePopGestureRecognizer.delegate = self;
     // Do any additional setup after loading the view.
 }
 
@@ -64,6 +64,11 @@
 -(void)back
 {
     [self popViewControllerAnimated:YES];
+}
+
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
+{
+    return self.childViewControllers.count >1;
 }
 /*
 #pragma mark - Navigation

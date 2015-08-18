@@ -7,7 +7,7 @@
 //
 
 #import "MRFriendTrendsController.h"
-
+#import "MRLoginRegisterViewController.h"
 @interface MRFriendTrendsController ()
 
 @end
@@ -23,6 +23,10 @@
     
     // 设置导航栏左边的按钮
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTarget:self action:@selector(leftBarButtonClick) image:@"friendsRecommentIcon" highLightImage:@"friendsRecommentIcon-click"];
+}
+- (IBAction)clickLogin:(UIButton *)sender {
+    [self presentViewController:[[MRLoginRegisterViewController alloc]init] animated:YES completion:nil];
+    
 }
 
 - (void)leftBarButtonClick {

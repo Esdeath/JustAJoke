@@ -16,6 +16,22 @@
 
 @implementation MRTabBar
 
++ (void)initialize
+{
+    MRTabBar *tabbar = [MRTabBar appearance];
+    [tabbar setBackgroundImage:[UIImage imageNamed:@"tabbar-light"]];
+}
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    if (self = [super initWithFrame:frame]) {
+      //  self.backgroundImage = [UIImage imageNamed:@"tabbar-light"];
+    }
+    
+    return self;
+}
+
+
 - (UIButton *)publishButton
 {
     if (_publishButton == nil) {

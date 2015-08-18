@@ -64,6 +64,8 @@
 
 -(void)setUpAllChildViewControllers
 {
+    
+    
     MREssenceController *essence = [[MREssenceController alloc]init];
     [self setUpWithController:essence title:@"精华" image:@"tabBar_essence_icon" selectedImage:@"tabBar_essence_click_icon"];
     

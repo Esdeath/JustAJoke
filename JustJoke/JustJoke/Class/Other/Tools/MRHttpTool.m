@@ -1,14 +1,8 @@
-//
-//  WPHttpTool.m
-//  WP
-//
-//  Created by 沈亮亮 on 15/6/9.
-//  Copyright (c) 2015年 WP. All rights reserved.
-//
+
 
 #import "MRHttpTool.h"
 
-static NSString* const baseUrl = @"http://api.budejie.com/";
+
 
 @implementation MRHttpTool
 
@@ -30,23 +24,24 @@ static NSString* const baseUrl = @"http://api.budejie.com/";
         self.responseSerializer = [AFJSONResponseSerializer serializer];
     }
     return self;
+    
 }
 
-- (void)postWithURLString:(NSString *)url params:(NSDictionary *)params success:(void (^)(id))success failure:(void (^)(NSError *))failure
+- (void)postWithURLString:(NSString *)url params:(NSDictionary *)params success:(void (^)(NSURLSessionDataTask *task, id responseObject))success failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure
 {
     
     [self POST:url parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
         if (success) {
-            success(responseObject);
+            success(task,responseObject);
         }
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         if (failure) {
-            failure(error);
+            failure(task,error);
         }
     }];
 }
 
-- (void)postWithURLString:(NSString *)url params:(NSDictionary *)params formDataArray:(NSArray *)formDataArray success:(void (^)(id))success failure:(void (^)(NSError *))failure
+- (void)postWithURLString:(NSString *)url params:(NSDictionary *)params formDataArray:(NSArray *)formDataArray success:(void (^)(NSURLSessionDataTask *task,id))success failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure
 {
     [self POST:url parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData> totalFormData) {
         for (MRFormData *formData in formDataArray) {
@@ -54,31 +49,34 @@ static NSString* const baseUrl = @"http://api.budejie.com/";
         }
     } success:^(NSURLSessionDataTask *task, id responseObject) {
         if (success) {
-            success(responseObject);
+            success(task,responseObject);
         }
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         if (failure) {
-            failure(error);
+            failure(task,error);
         }
     }];
     
 }
 
-- (void)getWithURLString:(NSString *)url params:(NSDictionary *)params success:(void (^)(id))success failure:(void (^)(NSError *))failure
+- (void)getWithURLString:(NSString *)url params:(NSDictionary *)params success:(void (^)(NSURLSessionDataTask *task, id responseObject))success failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure
 {
-    MRLog(@"%@",url);
     [self GET:url parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
         if (success) {
-            success(responseObject);
+            success(task,responseObject);
         }
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         if (failure) {
-            failure(error);
+            failure(task,error);
         }
     }];
 }
 
 
+- (void)invalidateSessionCancelingTasks:(BOOL)cancelPendingTasks
+{
+    [super invalidateSessionCancelingTasks:YES];
+}
 @end
 
 /**

@@ -63,20 +63,22 @@
     params[@"a"] = @"tag_recommend";
     params[@"action"] = @"sub";
     params[@"c"] = @"topic";
-    
     // 发送请求
-    [self.recommandHttpTool getWithURLString:@"api/api_open.php" params:params success:^(id json) {
-        self.arrayModel = [MRRecommend objectArrayWithKeyValuesArray:json];
-        [self.tableView reloadData];
+    WEAKSELF
+    [self.recommandHttpTool getWithURLString:@"api/api_open.php" params:params success:^(NSURLSessionDataTask *task, id responseObject) {
+        weakSelf.arrayModel = [MRRecommend objectArrayWithKeyValuesArray:responseObject];
+        [weakSelf.tableView reloadData];
         [SVProgressHUD dismiss];
-    } failure:^(NSError *error) {
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
         [SVProgressHUD showErrorWithStatus:@"加载失败!"];
     }];
+    
+
 }
 
 - (void)dealloc
 {
-    [self.recommandHttpTool invalidateSessionCancelingTasks:YES];
+    [self.recommandHttpTool.tasks makeObjectsPerformSelector:@selector(cancel)];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

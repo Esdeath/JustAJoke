@@ -31,4 +31,6 @@
 #import <MJRefresh.h>
 #import <POP.h>
 #import <NJKWebViewProgress.h>
+//定义常量
+#import "MRConst.h"
 #endif

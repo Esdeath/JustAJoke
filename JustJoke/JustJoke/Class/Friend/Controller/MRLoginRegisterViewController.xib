@@ -189,7 +189,7 @@
                     <state key="normal" title="注册账号">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
-                    <state key="selected" title="已有账号？"/>
+                    <state key="selected" title="已有账号?"/>
                     <state key="highlighted" title="已有账号？"/>
                     <connections>
                         <action selector="registerAndLogin:" destination="-1" eventType="touchUpInside" id="MmR-Rh-3H3"/>
@@ -282,6 +282,7 @@
                 <constraint firstItem="TTT-hB-QdP" firstAttribute="top" secondItem="FbN-7z-B4h" secondAttribute="bottom" constant="30" id="zg2-si-OlU"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="67" y="347"/>
         </view>
     </objects>
     <resources>

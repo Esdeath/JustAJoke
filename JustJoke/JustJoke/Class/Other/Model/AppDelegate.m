@@ -11,7 +11,6 @@
 @interface AppDelegate ()
 
 @end
-
 @implementation AppDelegate
 
 
@@ -19,7 +18,7 @@
     // Override point for customization after application launch.
     
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    
+   
     MRMainController *main = [[MRMainController alloc]init];
     self.window.rootViewController = main;
     

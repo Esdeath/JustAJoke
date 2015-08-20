@@ -2,7 +2,7 @@
 
 #import "MRHttpTool.h"
 
-
+static NSString* const baseUrl = @"http://api.budejie.com/api/";
 
 @implementation MRHttpTool
 

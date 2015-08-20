@@ -8,9 +8,6 @@
 
 #import "MRConst.h"
 
-@implementation MRConst
+const NSInteger Margin = 10;
 
-NSString* const baseUrl = @"http://api.budejie.com/";
-
-
-@end
+NSString *const urlExtension =@"api_open.php";

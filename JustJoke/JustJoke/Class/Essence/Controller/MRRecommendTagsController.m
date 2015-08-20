@@ -65,15 +65,13 @@
     params[@"c"] = @"topic";
     // 发送请求
     WEAKSELF
-    [self.recommandHttpTool getWithURLString:@"api/api_open.php" params:params success:^(NSURLSessionDataTask *task, id responseObject) {
+    [self.recommandHttpTool getWithURLString:urlExtension params:params success:^(NSURLSessionDataTask *task, id responseObject) {
         weakSelf.arrayModel = [MRRecommend objectArrayWithKeyValuesArray:responseObject];
         [weakSelf.tableView reloadData];
         [SVProgressHUD dismiss];
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         [SVProgressHUD showErrorWithStatus:@"加载失败!"];
     }];
-    
-
 }
 
 - (void)dealloc

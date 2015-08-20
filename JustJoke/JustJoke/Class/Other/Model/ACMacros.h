@@ -6,6 +6,7 @@
 #ifndef ACMacros_h
 #define ACMacros_h
 
+
 //弱self，强self,一般在block中使用
 #define WEAKSELF   typeof(self) __weak weakSelf = self;
 #define STRONGSELF typeof(weakSelf) __strong strongSelf = weakSelf;
@@ -57,21 +58,6 @@
 #define Main_Screen_Height      [[UIScreen mainScreen] bounds].size.height
 #define Main_Screen_Width       [[UIScreen mainScreen] bounds].size.width
 
-// View 坐标(x,y)和宽高(width,height)
-#define ViewxPos(v)                 (v).frame.origin.x
-#define ViewyPos(v)                 (v).frame.origin.y
-#define ViewWidth(v)                (v).frame.size.width
-#define ViewHeight(v)               (v).frame.size.height
-
-#define MinFrameX(v)                 CGRectGetMinX((v).frame)
-#define MinFrameY(v)                 CGRectGetMinY((v).frame)
-
-#define MidFrameX(v)                 CGRectGetMidX((v).frame)
-#define MidFrameY(v)                 CGRectGetMidY((v).frame)
-
-#define MaxFrameX(v)                 CGRectGetMaxX((v).frame)
-#define MaxFrameY(v)                 CGRectGetMaxY((v).frame)
-
 // 系统控件默认高度
 #define kStatusBarHeight        (20.f)
 #define kTopBarHeight           (44.f)
@@ -81,7 +67,7 @@
 #define kChineseKeyboardHeight  (252.f)
 
 
-/* ****************************************************************************************************************** */
+/******************************************************************************************************************* */
 #pragma mark - Funtion Method (宏 方法)
 
 // PNG JPG 图片路径

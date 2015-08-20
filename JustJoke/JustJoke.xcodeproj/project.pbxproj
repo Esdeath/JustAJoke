@@ -40,6 +40,10 @@
 		E57D124C1B7F906C00312ADF /* MRSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D124B1B7F906C00312ADF /* MRSettingController.m */; };
 		E5839C751B809AE1007AA586 /* MRRecommendTagsController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5839C741B809AE1007AA586 /* MRRecommendTagsController.m */; };
 		E5996E3A1B8489FD0002B8A5 /* MRConst.m in Sources */ = {isa = PBXBuildFile; fileRef = E5996E391B8489FD0002B8A5 /* MRConst.m */; };
+		E59F2E691B849D2600232117 /* MRMeLoginCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E59F2E681B849D2600232117 /* MRMeLoginCell.m */; };
+		E59F2E6C1B84A2BD00232117 /* MRMeFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = E59F2E6B1B84A2BD00232117 /* MRMeFooterView.m */; };
+		E59F2E6F1B84AA7200232117 /* MRMeButtonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E59F2E6E1B84AA7200232117 /* MRMeButtonModel.m */; };
+		E59F2E721B84AC6800232117 /* MRMeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E59F2E711B84AC6800232117 /* MRMeButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +122,14 @@
 		E5839C741B809AE1007AA586 /* MRRecommendTagsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRRecommendTagsController.m; sourceTree = "<group>"; };
 		E5996E381B8489FD0002B8A5 /* MRConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRConst.h; sourceTree = "<group>"; };
 		E5996E391B8489FD0002B8A5 /* MRConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRConst.m; sourceTree = "<group>"; };
+		E59F2E671B849D2600232117 /* MRMeLoginCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRMeLoginCell.h; sourceTree = "<group>"; };
+		E59F2E681B849D2600232117 /* MRMeLoginCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMeLoginCell.m; sourceTree = "<group>"; };
+		E59F2E6A1B84A2BD00232117 /* MRMeFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRMeFooterView.h; sourceTree = "<group>"; };
+		E59F2E6B1B84A2BD00232117 /* MRMeFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMeFooterView.m; sourceTree = "<group>"; };
+		E59F2E6D1B84AA7200232117 /* MRMeButtonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRMeButtonModel.h; sourceTree = "<group>"; };
+		E59F2E6E1B84AA7200232117 /* MRMeButtonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMeButtonModel.m; sourceTree = "<group>"; };
+		E59F2E701B84AC6800232117 /* MRMeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRMeButton.h; sourceTree = "<group>"; };
+		E59F2E711B84AC6800232117 /* MRMeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMeButton.m; sourceTree = "<group>"; };
 		FCEB258DDD2F2C38ACEC0FD2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -322,6 +334,8 @@
 		E57D11A81B7F58AF00312ADF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E59F2E6D1B84AA7200232117 /* MRMeButtonModel.h */,
+				E59F2E6E1B84AA7200232117 /* MRMeButtonModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -329,6 +343,12 @@
 		E57D11A91B7F58AF00312ADF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E59F2E671B849D2600232117 /* MRMeLoginCell.h */,
+				E59F2E681B849D2600232117 /* MRMeLoginCell.m */,
+				E59F2E6A1B84A2BD00232117 /* MRMeFooterView.h */,
+				E59F2E6B1B84A2BD00232117 /* MRMeFooterView.m */,
+				E59F2E701B84AC6800232117 /* MRMeButton.h */,
+				E59F2E711B84AC6800232117 /* MRMeButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -638,18 +658,22 @@
 				E57D123C1B7F80D100312ADF /* NSMutableURLRequest+Upload.m in Sources */,
 				E50083B61B8181EC00609DF0 /* MRLoginButton.m in Sources */,
 				E57D12381B7F80D100312ADF /* NSString+Hash.m in Sources */,
+				E59F2E691B849D2600232117 /* MRMeLoginCell.m in Sources */,
 				E57D12431B7F820300312ADF /* MRTabBar.m in Sources */,
 				E57D12401B7F80D100312ADF /* AppDelegate.m in Sources */,
 				E50B29A91B81CBE700C53AF7 /* MRLoginTextField.m in Sources */,
 				E57D123E1B7F80D100312ADF /* MRMainNavController.m in Sources */,
 				E50083A91B81684400609DF0 /* UIImage+MRImage.m in Sources */,
+				E59F2E721B84AC6800232117 /* MRMeButton.m in Sources */,
 				E570A2A21B80A9410040C0E9 /* MRRecommend.m in Sources */,
+				E59F2E6C1B84A2BD00232117 /* MRMeFooterView.m in Sources */,
 				E57D11C21B7F5AA900312ADF /* MRMeController.m in Sources */,
 				E57D11C51B7F5ABD00312ADF /* MRNewController.m in Sources */,
 				E5996E3A1B8489FD0002B8A5 /* MRConst.m in Sources */,
 				E570A2A61B80AA8D0040C0E9 /* MRRecommendCell.m in Sources */,
 				E50083B21B81797100609DF0 /* MRLoginRegisterViewController.m in Sources */,
 				E57D124C1B7F906C00312ADF /* MRSettingController.m in Sources */,
+				E59F2E6F1B84AA7200232117 /* MRMeButtonModel.m in Sources */,
 				E5839C751B809AE1007AA586 /* MRRecommendTagsController.m in Sources */,
 				E57D12391B7F80D100312ADF /* NSString+MR.m in Sources */,
 				E57D123A1B7F80D100312ADF /* UIView+AEBHandyAutoLayout.m in Sources */,

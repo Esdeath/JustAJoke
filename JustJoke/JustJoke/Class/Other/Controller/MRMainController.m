@@ -75,7 +75,7 @@
     MRFriendTrendsController *friend = [[MRFriendTrendsController alloc]init];
     [self setUpWithController:friend title:@"关注" image:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
     
-    MRMeController *me = [[MRMeController alloc]init];
+    MRMeController *me = [[MRMeController alloc]initWithStyle:UITableViewStyleGrouped];
     [self setUpWithController:me title:@"我" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
     
     

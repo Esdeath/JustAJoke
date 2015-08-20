@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MRConst : NSObject
 
-UIKIT_EXTERN NSString* const baseUrl;
-
-@end
+UIKIT_EXTERN const NSInteger Margin;
+UIKIT_EXTERN NSString *const urlExtension;

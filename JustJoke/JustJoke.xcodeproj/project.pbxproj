@@ -15,6 +15,11 @@
 		E50083B31B81797100609DF0 /* MRLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E50083B11B81797100609DF0 /* MRLoginRegisterViewController.xib */; };
 		E50083B61B8181EC00609DF0 /* MRLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E50083B51B8181EC00609DF0 /* MRLoginButton.m */; };
 		E50B29A91B81CBE700C53AF7 /* MRLoginTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E50B29A81B81CBE700C53AF7 /* MRLoginTextField.m */; };
+		E51ED0121B88B3CF00E20F5A /* MRPostKeyBoardHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = E51ED0111B88B3CF00E20F5A /* MRPostKeyBoardHeaderView.m */; };
+		E51ED0141B88B3FB00E20F5A /* MRPostKeyBoardHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E51ED0131B88B3FB00E20F5A /* MRPostKeyBoardHeaderView.xib */; };
+		E536FAF41B87EE8100F52245 /* MRPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E536FAF31B87EE8100F52245 /* MRPlaceholderTextView.m */; };
+		E55852861B86B3E000A106D4 /* MRPublishController.m in Sources */ = {isa = PBXBuildFile; fileRef = E55852851B86B3E000A106D4 /* MRPublishController.m */; };
+		E55852891B86BE1100A106D4 /* MRPublishButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E55852881B86BE1100A106D4 /* MRPublishButton.m */; };
 		E570A29F1B80A1CC0040C0E9 /* MRHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E570A29E1B80A1CC0040C0E9 /* MRHttpTool.m */; };
 		E570A2A21B80A9410040C0E9 /* MRRecommend.m in Sources */ = {isa = PBXBuildFile; fileRef = E570A2A11B80A9410040C0E9 /* MRRecommend.m */; };
 		E570A2A61B80AA8D0040C0E9 /* MRRecommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E570A2A41B80AA8D0040C0E9 /* MRRecommendCell.m */; };
@@ -40,6 +45,7 @@
 		E57D124C1B7F906C00312ADF /* MRSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D124B1B7F906C00312ADF /* MRSettingController.m */; };
 		E5839C751B809AE1007AA586 /* MRRecommendTagsController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5839C741B809AE1007AA586 /* MRRecommendTagsController.m */; };
 		E5996E3A1B8489FD0002B8A5 /* MRConst.m in Sources */ = {isa = PBXBuildFile; fileRef = E5996E391B8489FD0002B8A5 /* MRConst.m */; };
+		E59D23D51B8771F70079FB11 /* MRPostMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = E59D23D41B8771F70079FB11 /* MRPostMessageController.m */; };
 		E59F2E691B849D2600232117 /* MRMeLoginCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E59F2E681B849D2600232117 /* MRMeLoginCell.m */; };
 		E59F2E6C1B84A2BD00232117 /* MRMeFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = E59F2E6B1B84A2BD00232117 /* MRMeFooterView.m */; };
 		E59F2E6F1B84AA7200232117 /* MRMeButtonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E59F2E6E1B84AA7200232117 /* MRMeButtonModel.m */; };
@@ -71,6 +77,15 @@
 		E50083B51B8181EC00609DF0 /* MRLoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRLoginButton.m; sourceTree = "<group>"; };
 		E50B29A71B81CBE700C53AF7 /* MRLoginTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRLoginTextField.h; sourceTree = "<group>"; };
 		E50B29A81B81CBE700C53AF7 /* MRLoginTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRLoginTextField.m; sourceTree = "<group>"; };
+		E51ED0101B88B3CF00E20F5A /* MRPostKeyBoardHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRPostKeyBoardHeaderView.h; sourceTree = "<group>"; };
+		E51ED0111B88B3CF00E20F5A /* MRPostKeyBoardHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRPostKeyBoardHeaderView.m; sourceTree = "<group>"; };
+		E51ED0131B88B3FB00E20F5A /* MRPostKeyBoardHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRPostKeyBoardHeaderView.xib; sourceTree = "<group>"; };
+		E536FAF21B87EE8100F52245 /* MRPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRPlaceholderTextView.h; sourceTree = "<group>"; };
+		E536FAF31B87EE8100F52245 /* MRPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRPlaceholderTextView.m; sourceTree = "<group>"; };
+		E55852841B86B3E000A106D4 /* MRPublishController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRPublishController.h; sourceTree = "<group>"; };
+		E55852851B86B3E000A106D4 /* MRPublishController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRPublishController.m; sourceTree = "<group>"; };
+		E55852871B86BE1100A106D4 /* MRPublishButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRPublishButton.h; sourceTree = "<group>"; };
+		E55852881B86BE1100A106D4 /* MRPublishButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRPublishButton.m; sourceTree = "<group>"; };
 		E570A29D1B80A1CC0040C0E9 /* MRHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRHttpTool.h; sourceTree = "<group>"; };
 		E570A29E1B80A1CC0040C0E9 /* MRHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRHttpTool.m; sourceTree = "<group>"; };
 		E570A2A01B80A9410040C0E9 /* MRRecommend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRRecommend.h; sourceTree = "<group>"; };
@@ -122,6 +137,8 @@
 		E5839C741B809AE1007AA586 /* MRRecommendTagsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRRecommendTagsController.m; sourceTree = "<group>"; };
 		E5996E381B8489FD0002B8A5 /* MRConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRConst.h; sourceTree = "<group>"; };
 		E5996E391B8489FD0002B8A5 /* MRConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRConst.m; sourceTree = "<group>"; };
+		E59D23D31B8771F70079FB11 /* MRPostMessageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRPostMessageController.h; sourceTree = "<group>"; };
+		E59D23D41B8771F70079FB11 /* MRPostMessageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRPostMessageController.m; sourceTree = "<group>"; };
 		E59F2E671B849D2600232117 /* MRMeLoginCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRMeLoginCell.h; sourceTree = "<group>"; };
 		E59F2E681B849D2600232117 /* MRMeLoginCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMeLoginCell.m; sourceTree = "<group>"; };
 		E59F2E6A1B84A2BD00232117 /* MRMeFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRMeFooterView.h; sourceTree = "<group>"; };
@@ -152,6 +169,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E55852801B86B3C000A106D4 /* Publish */ = {
+			isa = PBXGroup;
+			children = (
+				E55852811B86B3C000A106D4 /* Controller */,
+				E55852821B86B3C000A106D4 /* Model */,
+				E55852831B86B3C000A106D4 /* View */,
+			);
+			path = Publish;
+			sourceTree = "<group>";
+		};
+		E55852811B86B3C000A106D4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E55852841B86B3E000A106D4 /* MRPublishController.h */,
+				E55852851B86B3E000A106D4 /* MRPublishController.m */,
+				E59D23D31B8771F70079FB11 /* MRPostMessageController.h */,
+				E59D23D41B8771F70079FB11 /* MRPostMessageController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E55852821B86B3C000A106D4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E55852831B86B3C000A106D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E55852871B86BE1100A106D4 /* MRPublishButton.h */,
+				E55852881B86BE1100A106D4 /* MRPublishButton.m */,
+				E536FAF21B87EE8100F52245 /* MRPlaceholderTextView.h */,
+				E536FAF31B87EE8100F52245 /* MRPlaceholderTextView.m */,
+				E51ED0101B88B3CF00E20F5A /* MRPostKeyBoardHeaderView.h */,
+				E51ED0111B88B3CF00E20F5A /* MRPostKeyBoardHeaderView.m */,
+				E51ED0131B88B3FB00E20F5A /* MRPostKeyBoardHeaderView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		E570A29C1B80A0330040C0E9 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +278,7 @@
 		E57D119D1B7F58AF00312ADF /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				E55852801B86B3C000A106D4 /* Publish */,
 				E57D119E1B7F58AF00312ADF /* Essence */,
 				E57D11AA1B7F58AF00312ADF /* New */,
 				E57D11A21B7F58AF00312ADF /* FriendTrends */,
@@ -600,6 +660,7 @@
 				E570A2A71B80AA8D0040C0E9 /* MRRecommendCell.xib in Resources */,
 				E50083B31B81797100609DF0 /* MRLoginRegisterViewController.xib in Resources */,
 				E50083AE1B8175AF00609DF0 /* MRFriendTrendsController.xib in Resources */,
+				E51ED0141B88B3FB00E20F5A /* MRPostKeyBoardHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -660,9 +721,12 @@
 				E57D12381B7F80D100312ADF /* NSString+Hash.m in Sources */,
 				E59F2E691B849D2600232117 /* MRMeLoginCell.m in Sources */,
 				E57D12431B7F820300312ADF /* MRTabBar.m in Sources */,
+				E55852861B86B3E000A106D4 /* MRPublishController.m in Sources */,
 				E57D12401B7F80D100312ADF /* AppDelegate.m in Sources */,
+				E536FAF41B87EE8100F52245 /* MRPlaceholderTextView.m in Sources */,
 				E50B29A91B81CBE700C53AF7 /* MRLoginTextField.m in Sources */,
 				E57D123E1B7F80D100312ADF /* MRMainNavController.m in Sources */,
+				E59D23D51B8771F70079FB11 /* MRPostMessageController.m in Sources */,
 				E50083A91B81684400609DF0 /* UIImage+MRImage.m in Sources */,
 				E59F2E721B84AC6800232117 /* MRMeButton.m in Sources */,
 				E570A2A21B80A9410040C0E9 /* MRRecommend.m in Sources */,
@@ -672,7 +736,9 @@
 				E5996E3A1B8489FD0002B8A5 /* MRConst.m in Sources */,
 				E570A2A61B80AA8D0040C0E9 /* MRRecommendCell.m in Sources */,
 				E50083B21B81797100609DF0 /* MRLoginRegisterViewController.m in Sources */,
+				E55852891B86BE1100A106D4 /* MRPublishButton.m in Sources */,
 				E57D124C1B7F906C00312ADF /* MRSettingController.m in Sources */,
+				E51ED0121B88B3CF00E20F5A /* MRPostKeyBoardHeaderView.m in Sources */,
 				E59F2E6F1B84AA7200232117 /* MRMeButtonModel.m in Sources */,
 				E5839C751B809AE1007AA586 /* MRRecommendTagsController.m in Sources */,
 				E57D12391B7F80D100312ADF /* NSString+MR.m in Sources */,

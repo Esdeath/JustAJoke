@@ -23,6 +23,17 @@
     NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
     attrs[NSFontAttributeName] = [UIFont boldSystemFontOfSize:20];
     [bar setTitleTextAttributes:attrs];
+    
+    //设置item的属性
+    UIBarButtonItem *item = [UIBarButtonItem appearance];
+    NSMutableDictionary *itemNormalAttrs = [NSMutableDictionary dictionary];
+    itemNormalAttrs[NSForegroundColorAttributeName] = [UIColor blackColor];
+    itemNormalAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:17];
+    [item setTitleTextAttributes:itemNormalAttrs forState:UIControlStateNormal];
+    
+    NSMutableDictionary *itemDisabledAttrs = [NSMutableDictionary dictionary];
+    itemDisabledAttrs[NSForegroundColorAttributeName] = [UIColor lightGrayColor];
+    [item setTitleTextAttributes:itemDisabledAttrs forState:UIControlStateDisabled];
 }
 
 - (void)viewDidLoad {

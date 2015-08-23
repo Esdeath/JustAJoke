@@ -10,6 +10,11 @@
 
 @implementation UIView (LayoutMethods)
 
++ (instancetype)viewFromNib
+{
+    return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil] lastObject];
+}
+
 // coordinator getters
 - (CGFloat)height
 {

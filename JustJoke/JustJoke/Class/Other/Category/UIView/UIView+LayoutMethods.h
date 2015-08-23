@@ -10,6 +10,8 @@
 
 @interface UIView (LayoutMethods)
 
++(instancetype)viewFromNib;
+
 // coordinator getters
 - (CGFloat)height;
 - (CGFloat)width;

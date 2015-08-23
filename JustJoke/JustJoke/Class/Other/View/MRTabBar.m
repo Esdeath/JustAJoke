@@ -7,7 +7,9 @@
 //
 
 #import "MRTabBar.h"
-
+#import "MRPublishController.h"
+#import "MRMainNavController.h"
+#import "MRPostMessageController.h"
 @interface MRTabBar ()
 
 @property (nonatomic,weak) UIButton *publishButton;
@@ -52,7 +54,12 @@
 
 -(void)publishClick
 {
-    MRLogFunc;
+    //[[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:[[MRPublishController alloc]init] animated:YES completion:nil];
+    
+    
+    
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:[[MRMainNavController alloc] initWithRootViewController:[[MRPostMessageController alloc]init] ] animated:YES completion:nil];
+    
 }
 
 

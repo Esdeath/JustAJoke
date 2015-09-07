@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MREssenceController : UIViewController
+@interface MREssenceController :UIViewController
 
 @end

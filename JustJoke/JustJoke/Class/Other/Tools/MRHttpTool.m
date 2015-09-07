@@ -22,6 +22,7 @@ static NSString* const baseUrl = @"http://api.budejie.com/api/";
     if (self = [super initWithBaseURL:url]) {
         self.requestSerializer = [AFJSONRequestSerializer serializer];
         self.responseSerializer = [AFJSONResponseSerializer serializer];
+        self.requestSerializer.timeoutInterval = 15;
     }
     return self;
     

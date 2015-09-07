@@ -13,31 +13,26 @@
 +(instancetype)viewFromNib;
 
 // coordinator getters
-- (CGFloat)height;
-- (CGFloat)width;
-- (CGFloat)x;
-- (CGFloat)y;
-- (CGSize)size;
-- (CGPoint)origin;
-- (CGFloat)centerX;
-- (CGFloat)centerY;
-- (CGFloat)bottom;
-- (CGFloat)right;
+@property (nonatomic,assign) CGFloat height;
+@property (nonatomic,assign) CGFloat width;
 
-- (void)setX:(CGFloat)x;
-- (void)setY:(CGFloat)y;
+@property (nonatomic,assign) CGFloat x;
+@property (nonatomic,assign) CGFloat y;
+
+@property (nonatomic,assign) CGSize size;
+@property (nonatomic,assign) CGPoint origin;
+
+@property (nonatomic,assign) CGFloat centerX;
+@property (nonatomic,assign) CGFloat centerY;
+
+@property (nonatomic,assign) CGFloat bottom;
+@property (nonatomic,assign) CGFloat right;
 
 // height
-- (void)setHeight:(CGFloat)height;
 - (void)heightEqualToView:(UIView *)view;
-
 // width
-- (void)setWidth:(CGFloat)width;
 - (void)widthEqualToView:(UIView *)view;
-
 // center
-- (void)setCenterX:(CGFloat)centerX;
-- (void)setCenterY:(CGFloat)centerY;
 - (void)centerXEqualToView:(UIView *)view;
 - (void)centerYEqualToView:(UIView *)view;
 
@@ -58,7 +53,6 @@
 - (void)rightEqualToView:(UIView *)view;
 
 // size
-- (void)setSize:(CGSize)size;
 - (void)sizeEqualToView:(UIView *)view;
 
 // imbueset

@@ -9,6 +9,7 @@
 #import "MRRecommendCell.h"
 #import "MRRecommend.h"
 #import "UIImage+MRImage.h"
+#import <UIKit/UIKit.h>
 @interface MRRecommendCell()
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageListView;
@@ -31,7 +32,7 @@
     self.themeNameLable.text = recommand.theme_name;
     
     NSString *str = nil;
-    if (recommand.sub_number.integerValue >= 10000) {
+    if ([recommand.sub_number integerValue]  >= 10000) {
         str = [NSString stringWithFormat:@"%.1f万",recommand.sub_number.floatValue/10000.0];
     } else {
         str = recommand.sub_number.stringValue;

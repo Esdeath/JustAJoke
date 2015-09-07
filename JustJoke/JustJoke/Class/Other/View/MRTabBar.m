@@ -13,6 +13,7 @@
 @interface MRTabBar ()
 
 @property (nonatomic,weak) UIButton *publishButton;
+@property (strong, nonatomic) UIImageView *imageCenter;
 
 @end
 
@@ -22,6 +23,19 @@
 {
     MRTabBar *tabbar = [MRTabBar appearance];
     [tabbar setBackgroundImage:[UIImage imageNamed:@"tabbar-light"]];
+}
+
+-(UIImageView *)imageCenter
+{
+    if (_imageCenter == nil) {
+        UIImageView *imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"tabbar_mainbtn_bg"]];
+        [imageView sizeToFit];
+        imageView.userInteractionEnabled = YES;
+        [self addSubview:imageView];
+        _imageCenter = imageView;
+    }
+    
+    return _imageCenter;
 }
 
 - (instancetype)initWithFrame:(CGRect)frame
@@ -54,11 +68,11 @@
 
 -(void)publishClick
 {
-    //[[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:[[MRPublishController alloc]init] animated:YES completion:nil];
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:[[MRPublishController alloc]init] animated:YES completion:nil];
     
     
     
-    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:[[MRMainNavController alloc] initWithRootViewController:[[MRPostMessageController alloc]init] ] animated:YES completion:nil];
+    //[[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:[[MRMainNavController alloc] initWithRootViewController:[[MRPostMessageController alloc]init] ] animated:YES completion:nil];
     
 }
 
@@ -70,6 +84,8 @@
 {
     [super layoutSubviews];
     
+    self.imageCenter.centerX = self.width*0.5;
+    self.imageCenter.centerY = self.height*0.5 - 5;
     // 发布按钮
     self.publishButton.centerX = self.width * 0.5;
     self.publishButton.centerY = self.height * 0.5;

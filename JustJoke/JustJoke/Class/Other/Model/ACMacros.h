@@ -58,13 +58,7 @@
 #define Main_Screen_Height      [[UIScreen mainScreen] bounds].size.height
 #define Main_Screen_Width       [[UIScreen mainScreen] bounds].size.width
 
-// 系统控件默认高度
-#define kStatusBarHeight        (20.f)
-#define kTopBarHeight           (44.f)
-#define kBottomBarHeight        (49.f)
-#define kCellDefaultHeight      (44.f)
-#define kEnglishKeyboardHeight  (216.f)
-#define kChineseKeyboardHeight  (252.f)
+
 
 
 /******************************************************************************************************************* */
@@ -78,13 +72,6 @@
 #define RgbColor(r, g, b)       [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]
 #define RgbColorA(r, g, b, a)    [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
 #define RandomColor [UIColor colorWithRed:arc4random_uniform(256) / 255.0 green:arc4random_uniform(256) / 255.0 blue:arc4random_uniform(256) / 255.0 alpha:1]
-#define MRGlobalBackgroundColor RgbColor(215, 215, 215)
-// View 圆角和加边框
-#define ViewBorderRadius(View, Radius, Width, Color)\
-                                [View.layer setCornerRadius:(Radius)];\
-                                [View.layer setMasksToBounds:YES];\
-                                [View.layer setBorderWidth:(Width)];\
-                                [View.layer setBorderColor:[Color CGColor]]
 
 // 当前版本
 #define FSystemVersion          ([[[UIDevice currentDevice] systemVersion] floatValue])

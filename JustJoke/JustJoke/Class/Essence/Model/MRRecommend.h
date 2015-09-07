@@ -7,11 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <UIKit/UIKit.h>
 @interface MRRecommend : NSObject
 
-@property (nonatomic,strong) NSString *theme_name;
-@property (nonatomic,strong) NSString *image_list;
-@property (nonatomic,strong) NSNumber *sub_number;
+/** 图片 */
+@property (nonatomic, copy) NSString *image_list;
+/** 名字 */
+@property (nonatomic, copy) NSString *theme_name;
+/** 订阅数 */
+@property (nonatomic, strong) NSNumber*  sub_number;
+
 
 @end

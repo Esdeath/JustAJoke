@@ -11,6 +11,7 @@
 #import "MRPlaceholderTextView.h"
 
 #import "MRPostKeyBoardHeaderView.h"
+
 @interface MRPostMessageController ()<UITextViewDelegate>
 @property (nonatomic,strong) UIView *contentView;
 @property (nonatomic,strong) UITextView *textView;
@@ -56,7 +57,7 @@
 -(void)setupContentView
 {
     UIView *contentView = [[UIView alloc]init];
-    contentView.frame = CGRectMake(Margin, kTopBarHeight + kStatusBarHeight + Margin, Main_Screen_Width - 2*Margin, Main_Screen_Height - 2*Margin);
+    contentView.frame = CGRectMake(SmallMargin , kTopBarHeight + kStatusBarHeight + SmallMargin, Main_Screen_Width - 2*SmallMargin, Main_Screen_Height - 2*SmallMargin);
     contentView.backgroundColor = [UIColor clearColor];
     [self.view addSubview:contentView];
     self.contentView = contentView;
@@ -73,11 +74,10 @@
     textView.frame = self.contentView.bounds;
     textView.delegate = self;
     
-
     //用来自定义键盘
     //textView.inputView
     //textView.inputAccessoryView =
-    textView.backgroundColor = MRGlobalBackgroundColor;
+    textView.backgroundColor = [UIColor clearColor];
     [self.contentView addSubview:textView];
     
     self.textView = textView;
